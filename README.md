@@ -16,3 +16,20 @@ First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/puneet-rara/oAuth.git
 cd oAuth
+
+```
+## 2. Create a .env File
+
+PORT=3000
+MONGO_URI="your_mongodb_connection_string"
+SESSION_SECRET="your_session_secret_key"
+GOOGLE_CLIENT_ID="your_google_client_id"
+GOOGLE_CLIENT_SECRET="your_google_client_secret"
+
+## 3. Add the node_modules
+
+npm i -> To intialize the node_module
+
+## 4. Run the Application
+
+npm run dev
