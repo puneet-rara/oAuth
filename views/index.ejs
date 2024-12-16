@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Login with Google</title>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+  <div class="text-center bg-white p-10 rounded-lg shadow-md">
+    <h1 class="text-3xl font-bold mb-4">Welcome to OAuth App</h1>
+    <% if (!user) { %>
+      <a href="/auth/google" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Login with Google
+      </a>
+    <% } else { %>
+      <p class="text-lg">You are already logged in!</p>
+      <a href="/profile" class="text-blue-500 underline">Go to Profile</a>
+      <br>
+      <a href="/logout" class="text-red-500 underline">Logout</a>
+    <% } %>
+  </div>
+</body>
+</html>

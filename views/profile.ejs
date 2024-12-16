@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/styles.css" rel="stylesheet">
+  <title>Profile</title>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+  <div class="text-center bg-white p-10 rounded-lg shadow-md">
+    <h1 class="text-3xl font-bold mb-4">Profile Information</h1>
+    <img src="/peakpx.jpg" class="w-24 h-24 rounded-full mx-auto mb-4 ">
+    <!-- <img src="user.photos[0].value" class="w-24 h-24 rounded-full mx-auto mb-4"> -->
+    <p class="text-lg font-semibold">Name: <%= user.displayName %></p>
+    <p class="text-lg">Email: <%= user.emails[0].value %></p>
+    <a href="/logout" class="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 inline-block">
+      Logout
+    </a>
+  </div>
+</body>
+</html>
